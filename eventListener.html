@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onClick demo</title>
+</head>
+<body>
+<h1>List animals</h1>
+<input type="text" id="new-animal">
+<button id="add-animal">Add</button>
+<ul id="todo-list">
+	<!-- <li></li> -->
+</ul>
+<script type="text/javascript" charset="utf-8" async>
+	var todoList = [
+	"Cat",
+	"Dog",
+	"Pig"
+	];
+
+	function addAnimal(){
+		var input = document.getElementById("new-animal");
+		var newAnimal = input.value;
+		todoList.push(newAnimal);
+		render();
+		input.value='';
+	}
+
+	var addedAnimal = document.getElementById('add-animal');
+	// addedAnimal.onclick = addAnimal;
+	addedAnimal.addEventListener('click',addAnimal);
+	//trigger an event
+	//event listener (honestly this is the function which will be executed after event)
+	addedAnimal.addEventListener('click',function(){
+		alert("A new animal will be added!")
+	});
+
+	function render(){
+		var htmlList = document.getElementById("todo-list");
+	var content = todoList.map(function(item){
+		return "<li>"+item+"</li>";
+	});
+	htmlList.innerHTML = content.join('');
+	}
+	render();
+
+</script>
+</body>
+</html>
