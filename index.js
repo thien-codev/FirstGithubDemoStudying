@@ -10,6 +10,7 @@ var mouse = new Mouse('Jerry');
 var cat = new Cat('Tom');
 
 cat.eat(mouse);
+cat.eat(dog)
 mouse.dead();
 dog.eat(cat);
 console.log(mouse);
