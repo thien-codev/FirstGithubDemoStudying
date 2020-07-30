@@ -22,3 +22,13 @@ I really like Git.
 // gitignore (bỏ qua nhưng file không muốn được commit)
 
 // git config global credential.helper "cache --timeout=18000"  lưu thông tin đăng nhập dùng credential.
+
+// pull request
+//1. git checkout -b <nameBranch> (creat new branch)
+//2. git push origin <nameBranch>
+//3. create pull request on GitHub
+//4. review code
+//   4.1 review code online(github)
+//   4.2 fetch branch into local to test offline
+//   4.3 approve the pull request
+//5. merge branch to maste
