@@ -20,3 +20,5 @@ I really like Git.
 
 
 // gitignore (bỏ qua nhưng file không muốn được commit)
+
+// git config global credential.helper "cache --timeout=18000"  lưu thông tin đăng nhập dùng credential.
