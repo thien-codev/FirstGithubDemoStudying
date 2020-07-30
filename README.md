@@ -13,8 +13,10 @@ I really like Git.
 // git restore --staged <file>
 // or git reset (--soft,--mixed,--hard)
 
-// git checkout -b <branch>
-// git checkout <branch>
-// git merge
+// git checkout -b <nameBranch> (to built branch name nameBranch)
+// git checkout <nameBranch> (to switch to nameBranch)
+// git branch (to check the brand which u in)
+// git merge <nameBranch> (to merge nameBranch to master)
+
 
 // gitignore (bỏ qua nhưng file không muốn được commit)
