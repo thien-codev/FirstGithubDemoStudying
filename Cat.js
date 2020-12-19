@@ -6,10 +6,10 @@ var Mouse = require('./Mouse');
 Cat.prototype.eat = function(animal){
 	if(animal instanceof Mouse){
 		console.log("thien dep trai")
+		console.log("thien love dog")
 		this.stomach.push(animal);
 	}else{
 		throw new Error('Cat can eat only mouse!');
-	}
+	
 }
 
-module.exports = Cat;
