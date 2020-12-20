@@ -8,6 +8,7 @@ Cat.prototype.eat = function(animal){
 		console.log("thien dep trai")
 		console.log("thien love dog")
 		console.log("thien love dung")
+		console.log("thien love family")
 		this.stomach.push(animal);
 	}else{
 		throw new Error('Cat can eat only mouse!');
